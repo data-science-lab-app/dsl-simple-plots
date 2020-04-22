@@ -146,4 +146,4 @@ export const ColorChoices = [
     "whitesmoke",
     "yellowgreen",
     "rebeccapurple"
-]
+];

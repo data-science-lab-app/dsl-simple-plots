@@ -1,10 +1,10 @@
-import { ScatterPlot } from "./scatter.plot"
+import { LinePlot } from "./line.plot"
 
-describe('Scatter Plot Tests', () => {
-    let visualization: ScatterPlot;
+describe('Line Plot Tests', () => {
+    let visualization: LinePlot;
 
     beforeEach(() => {
-        visualization = new ScatterPlot();
+        visualization = new LinePlot();
     });
 
     it('options should return false for no more', () => {
@@ -12,13 +12,14 @@ describe('Scatter Plot Tests', () => {
     });
 
     it('options should return three options', () => {
-        expect(visualization.getOptions().options().length).toBe(3);
+        expect(visualization.getOptions().options().length).toBe(4);
     });
 
     it('submit should be no more afterwards', () => {
         visualization.getOptions().submit({
             title: 'My title',
-            color: 'red'
+            color: 'red',
+            curve: 'Step'
         });
 
         expect(visualization.getOptions().noMore()).toBeTruthy();
@@ -31,7 +32,8 @@ describe('Scatter Plot Tests', () => {
     it('visualize should set data with title', () => {
         visualization.getOptions().submit({
             title: 'My title',
-            color: 'red'
+            color: 'red',
+            curve: 'Step'
         });
         visualization.getInputs().submit({
             x: {
@@ -49,7 +51,8 @@ describe('Scatter Plot Tests', () => {
             xLabel: 'x label',
             yLabel: 'y label',
             title: 'My title',
-            color: 'red'
+            color: 'red',
+            curve: 'Step'
         });
         expect(visualization.getOptions().noMore()).toBeTruthy();
     });
@@ -86,7 +89,8 @@ describe('Scatter Plot Tests', () => {
     
     it('visualize should set data without title', () => {
         visualization.getOptions().submit({
-            color: 'red'
+            color: 'red',
+            curve: 'Step'
         });
         visualization.getInputs().submit({
             x: {
@@ -104,7 +108,8 @@ describe('Scatter Plot Tests', () => {
             xLabel: 'x label',
             yLabel: 'y label',
             color: 'red',
-            title: undefined
+            title: undefined,
+            curve: 'Step'
         });
         expect(visualization.getOptions().noMore()).toBeTruthy();
     });
@@ -112,6 +117,7 @@ describe('Scatter Plot Tests', () => {
     it('visualize should set data with hex color', () => {
         visualization.getOptions().submit({
             color: 'red',
+            curve: 'Step',
             hexColor: '#000000'
         });
         visualization.getInputs().submit({
@@ -130,7 +136,8 @@ describe('Scatter Plot Tests', () => {
             xLabel: 'x label',
             yLabel: 'y label',
             color: '#000000',
-            title: undefined
+            title: undefined,
+            curve: 'Step'
         });
         expect(visualization.getOptions().noMore()).toBeTruthy();
     });
