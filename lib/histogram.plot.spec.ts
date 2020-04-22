@@ -11,7 +11,7 @@ describe('Histogram Plot Tests', () => {
         expect(visualization.getOptions().noMore()).toBeFalsy();
     });
 
-    it('options should return three options', () => {
+    it('options should return four options', () => {
         expect(visualization.getOptions().options().length).toBe(4);
     });
 
@@ -25,7 +25,7 @@ describe('Histogram Plot Tests', () => {
         expect(visualization.getOptions().noMore()).toBeTruthy();
     });
 
-    it('inputs should return two inputs', () => {
+    it('inputs should return one inputs', () => {
         expect(visualization.getInputs().inputs().length).toBe(1);
     });
 
