@@ -20,9 +20,35 @@
     "url": "https://github.com/data-science-lab-app/dsl-simple-plots/issues"
   },
   "homepage": "https://github.com/data-science-lab-app/dsl-simple-plots#readme",
-  "data_science_lab": [],
+  "data_science_lab": [
+    {
+      "name": "Connected Scatter Plot",
+      "type": "Visualization",
+      "classname": "ConnectedScatterPlot"
+    },
+    {
+      "name": "Correlogram Plot",
+      "type": "Visualization",
+      "classname": "CorrelogramPlot"
+    },
+    {
+      "name": "Histogram Plot",
+      "type": "Visualization",
+      "classname": "HistogramPlot"
+    },
+    {
+      "name": "Line Plot",
+      "type": "Visualization",
+      "classname": "LinePlot"
+    },
+    {
+      "name": "Scatter Plot",
+      "type": "Visualization",
+      "classname": "ScatterPlot"
+    }
+  ],
   "dependencies": {
-    "data-science-lab-core": "^0.0.27"
+    "data-science-lab-core": "^0.0.30"
   },
   "devDependencies": {
     "@types/node": "^12.11.1",
