@@ -259,7 +259,7 @@ class LinePlotPluginOptions extends PluginOptions {
             new TextOption({
                 id: 'hexColor',
                 label: 'Type a color in hex (example: #00bfff)',
-                pattern: '^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$',
+                pattern: '^\#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$',
                 min: 0,
                 max: 7
             }),

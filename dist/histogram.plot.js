@@ -114,7 +114,7 @@ var HistogramPlotPluginOptions = /** @class */ (function (_super) {
             new data_science_lab_core_1.TextOption({
                 id: 'hexColor',
                 label: 'Type a color in hex (example: #00bfff)',
-                pattern: '^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$',
+                pattern: '^\#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$',
                 min: 0,
                 max: 7
             }),
