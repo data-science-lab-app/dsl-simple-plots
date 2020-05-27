@@ -12,7 +12,7 @@ describe('Scatter Plot Tests', () => {
     });
 
     it('options should return three options', () => {
-        expect(visualization.getOptions().options().length).toBe(3);
+        expect(visualization.getOptions().options().length).toBe(2);
     });
 
     it('submit should be no more afterwards', () => {

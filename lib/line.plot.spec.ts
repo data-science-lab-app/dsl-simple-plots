@@ -12,7 +12,7 @@ describe('Line Plot Tests', () => {
     });
 
     it('options should return three options', () => {
-        expect(visualization.getOptions().options().length).toBe(4);
+        expect(visualization.getOptions().options().length).toBe(3);
     });
 
     it('submit should be no more afterwards', () => {

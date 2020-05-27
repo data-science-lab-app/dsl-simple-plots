@@ -226,13 +226,6 @@ class ScatterPlotPluginOptions extends PluginOptions {
                 label: 'Provide a title (if you wish to include one)',
                 min: 0,
             }),
-            new TextOption({
-                id: 'hexColor',
-                label: 'Type a color in hex (example: #00bfff)',
-                pattern: '^\#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$',
-                min: 0,
-                max: 7
-            }),
             new ChoicesOption({
                 id: 'color',
                 label: 'Select a color',
